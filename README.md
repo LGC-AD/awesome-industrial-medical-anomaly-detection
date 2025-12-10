@@ -9,8 +9,120 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 
 
+- ⭐⭐ *(2019-CVPR)* **** [[Paper]](), [[ArXiv]](), [[Code]]()
+  - Authors: 
+  - Brain 
+  - Datasets: 
+
+
+
+
 
 # [Industrial Anomaly Detection](#industrial-anomaly-detection)
+
+
+
+
+
+## Supervised/Openset/Noise Anomaly Detection Methods
+
+
+
+
+- ⭐⭐ *(2025-CVPR)* **Distribution Prototype Diffusion Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Distribution_Prototype_Diffusion_Learning_for_Open-set_Supervised_Anomaly_Detection_CVPR_2025_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2502.20981), [[Code]](https://github.com/fuyunwang/DPDL)
+  - Authors: Fuyun Wang, Tong Zhang, Yuanzhi Wang, Yide Qiu, Xin Liu, Xu Guo, Zhen Cui
+  - a prototype-driven latent space that tightly clusters normal samples while pushing abnormal ones away, enabling clearer separation even with limited anomaly examples. 
+  - Datasets: MVTec AD, Optical, SDD, AITEX, ELPV, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
+
+
+
+- ⭐ *(2025-AAAI)* **Qsco: A Quantum Scoring Module for Open-set Supervised Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/34190), [[ArXiv]](https://arxiv.org/abs/2405.16368)
+  - Authors: Yifeng Peng, Xinyi Li, Zhiding Liang, Ying Wang
+  - a quantum-enhanced scoring module that uses variational quantum circuits to better handle uncertainty and improve the detection of unfamiliar abnormal patterns. 
+  - Datasets:  MVTec AD, AITEX, SDD, ELPV, Optical, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
+
+
+
+
+
+- ⭐⭐ *(2024-CVPR)* **Anomaly Heterogeneity Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_Anomaly_Heterogeneity_Learning_for_Open-set_Supervised_Anomaly_Detection_CVPR_2024_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2310.12790), [[Code]](https://github.com/mala-lab/AHL)
+  - Authors: Jiawen Zhu, Choubo Ding, Yu Tian, Guansong Pang
+  - Simulates diverse abnormal patterns so models can learn a more general notion of abnormality and better handle unseen, unpredictable defect types. 
+  - Datasets: MVTec AD, AITEX, SDD, ELPV, Optical, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
+
+
+
+- ⭐ *(2024-CVPR)* **Supervised Anomaly Detection for Complex Industrial Images** [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/html/Baitieva_Supervised_Anomaly_Detection_for_Complex_Industrial_Images_CVPR_2024_paper.html), [[ArXiv]](https://arxiv.org/abs/2405.04953), [[Code]](https://github.com/abc-125/segad)
+  - Authors: Aimira Baitieva, David Hurych, Victor Besnier, Olivier Bernard
+  - A new industrial defect dataset and a method that combines pixel-level signals with a boosted classifier to better identify real manufacturing defects. 
+  - Datasets: Valeo Anomaly Dataset (VAD), VisA
+
+
+
+- ⭐⭐ *(2024-TIP)* **Target before Shooting: Accurate Anomaly Detection and Localization under One Millisecond via Cascade Patch Retrieval** [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10678861), [[ArXiv]](https://arxiv.org/abs/2308.06748), [[Code]](https://github.com/flyinghu123/CPR)
+  - Authors: Hanxi Li, Jianfei Hu, Bo Li, Hao Chen, Yongbin Zheng, Chunhua Shen
+  - a fast cascade retrieval system that finds the most similar reference images and patches to score test samples, achieving both top accuracy and extremely high processing speed. 
+  - Datasets: MVTec AD, MVTec-3D AD, BTAD
+
+
+
+
+- ⭐ *(2023-CVPR)*  **Prototypical Residual Networks for Anomaly Detection and Localization** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Prototypical_Residual_Networks_for_Anomaly_Detection_and_Localization_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2212.02031), [[Unoff-Code]](https://github.com/xcyao00/PRNet)
+  - Authors: Hui Zhang, Zuxuan Wu, Zheng Wang, Zhineng Chen, Yu-Gang Jiang
+  - learns multi-scale residual patterns to highlight defective regions and uses diverse synthetic variations to help the system generalize beyond a few available abnormal examples. 
+  - Datasets: MVTec AD, DAGM, BTAD, KolektorSDD2
+
+
+
+
+- ⭐⭐ *(2023-CVPR)* **Explicit Boundary Guided Semi-Push-Pull Contrastive Learning for Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Yao_Explicit_Boundary_Guided_Semi-Push-Pull_Contrastive_Learning_for_Supervised_Anomaly_Detection_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2207.01463), [[Code]](https://github.com/xcyao00/BGAD)
+  - Authors: Xincheng Yao, Ruoqi Li, Jing Zhang, Jun Sun, Chongyang Zhang
+  - a boundary-guided contrastive learning method that uses a few known abnormal examples to learn clearer feature separation while avoiding bias toward those seen abnormalities
+  - Datasets: MVTecAD, BTAD, AITEX, ELPV, BrainMRI, HeadCT
+
+
+
+- ⭐⭐⭐ *(2022-CVPR)* **Catching Both Gray and Black Swans: Open-Set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Ding_Catching_Both_Gray_and_Black_Swans_Open-Set_Supervised_Anomaly_Detection_CVPR_2022_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2203.14506), [[Code]](https://github.com/Choubo/DRA)
+  - Authors: Choubo Ding, Guansong Pang, Chunhua Shen
+  - separates different types of abnormal cues—both known and synthetically created—to help the model recognize not only familiar but also entirely new forms of abnormality. 
+  - Datasets: MVTec AD, AITEX, SDD, ELPV, Optical, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
+
+
+- ⭐⭐ *(2021-ICLR)* **Explainable Deep One-Class Classification** [[Paper]](https://openreview.net/forum?id=A5VV3UyIQz), [[ArXiv]](https://arxiv.org/abs/2007.01760), [[Code]](https://github.com/liznerski/fcdd)
+  - Authors: Philipp Liznerski, Lukas Ruff, Robert A. Vandermeulen, Billy Joe Franks, Marius Kloft, Klaus-Robert Müller
+  - turns its own feature mapping into an explanation heatmap, enabling both strong detection performance and interpretable localization of unusual regions. 
+  - Datasets: Fashion-MNIST, CIFAR-10, ImageNet, MVTec AD
+
+
+
+
+
+- ⭐⭐⭐ *(2020-ICLR)* **Deep Semi-Supervised Anomaly Detection** [[Paper]](), [[ArXiv]](https://arxiv.org/abs/1906.02694), [[Code]](https://github.com/lukasruff/Deep-SAD-PyTorch)
+  - Authors: Ruff, Lukas and Vandermeulen, Robert A. and G{\"o}rnitz, Nico and Binder, Alexander and M{\"u}ller, Emmanuel and M{\"u}ller, Klaus-Robert and Kloft, Marius 
+  - uses a small number of known normal and abnormal examples to guide the model in separating normal from non-normal patterns.
+  - Datasets: MNIST, Fashion-MNIST, and CIFAR-10 
+
+
+
+
+
+- ⭐ *(2019-ICLR)* **Deep Anomaly Detection with Outlier Exposure** [[Paper]](https://openreview.net/forum?id=HyxCxhRcY7), [[ArXiv]](https://arxiv.org/abs/1812.04606), [[Code]](https://github.com/hendrycks/outlier-exposure)
+  - Authors: Dan Hendrycks, Mantas Mazeika, Thomas Dietterich
+  - improves detection of unusual inputs by training models with large external datasets of out-of-distribution examples so they can better recognize unseen irregular cases. 
+  - Datasets: SVHN, CIFAR-10, CIFAR-100, Tiny ImageNet, Places365, 20 Newsgroups, TREC, SST, 80 Million Tiny Images, ImageNet-22K, WikiText-2
+
+
+
+
+
+
+- ⭐⭐ *(2019-KDD)* **Deep Anomaly Detection with Deviation Networks** [[Paper]](https://dl.acm.org/doi/10.1145/3292500.3330871), [[ArXiv]](https://arxiv.org/abs/1911.08623), [[Code]](https://github.com/mala-lab/deviation-network-image)
+  - Authors: Guansong Pang, Chunhua Shen, Anton van den Hengel
+  - an end-to-end model that directly learns anomaly scores using a few labeled outliers, ensuring their scores statistically stand out from normal data for more efficient and accurate detection. 
+  - Datasets: donors, census, fraud, celeba, backdoor, URL, campaign, news20, thyroid 
+
+
+
 
 
 
@@ -343,7 +455,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 # Updates
 
-
+- 🦘 2025-12-10: Added Industrial supervised AD papers (2017-2025, ICLR, CVPR, AAAI).
 - 🦘 2025-11-29: Added Medical Anomaly Detection papers (2017-2025, TMI,MedIA, MICCAI, CVPR) and datasets.
 - 🦘 2025-11-28: Added Medical Anomaly Detection papers (2020-2025, TMI,MedIA, MICCAI, CVPR) and datasets.
 
