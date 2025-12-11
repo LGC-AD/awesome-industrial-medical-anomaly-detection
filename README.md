@@ -23,6 +23,199 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 
 
+## Unsupervised Anomaly Detection Methods
+
+
+### One-class Classification Methods
+
+
+
+- ⭐⭐⭐ *(2022-AAAI)* **Deep One-Class Classification via Interpolated Gaussian Descriptor** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/19915), [[ArXiv]](https://arxiv.org/abs/2101.10043), [[Code]](https://github.com/tianyu0207/IGD)
+  - Authors: Yuanhong Chen, Yu Tian, Guansong Pang, Gustavo Carneiro
+  - Bralearns a smooth Gaussian descriptor using adversarially interpolated samples so the model can form a robust, compact description of normal data and avoid overfitting or contamination issues.in 
+  - Datasets: MNIST, Fashion MNIST, CIFAR-10, MVTec AD, Hyper-Kvasir, LAG
+
+
+
+
+
+- ⭐⭐ *(2020-ACCV)* **Patch SVDD: Patch-level SVDD for Anomaly Detection and Segmentation** [[Paper]](https://openaccess.thecvf.com/content/ACCV2020/papers/Yi_Patch_SVDD_Patch-level_SVDD_for_Anomaly_Detection_and_Segmentation_ACCV_2020_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2006.16067), [[Code]](https://github.com/nuclearboy95/Anomaly-Detection-PatchSVDD-PyTorch)
+  - Authors: Jihun Yi, Sungroh Yoon
+  - extends deep SVDD to a patch-based, self-supervised setup so the model can both detect abnormal images and pinpoint faulty regions with much higher accuracy. 
+  - Datasets: MVTec AD
+
+
+
+- ⭐⭐⭐ *(2018-ICLR)* **Deep One-Class Classification** [[Paper]](https://proceedings.mlr.press/v80/ruff18a.html), [[Code]](https://github.com/lukasruff/Deep-SVDD-PyTorch)
+  - Authors: Lukas Ruff, Robert Vandermeulen, Nico Goernitz, Lucas Deecke, Shoaib Ahmed Siddiqui, Alexander Binder, Emmanuel Müller, Marius Kloft 
+  - a deep model trained directly on a one-class objective to tightly enclose normal data, enabling effective identification of inputs that fall outside this learned boundary. 
+  - Datasets: MNIST, CIFAR-10
+
+### Reconstruction-based Methods
+
+
+
+
+- ⭐⭐ *(2025-AAAI)* **Unlocking the Potential of Reverse Distillation for Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/abs/2412.07579), [[Code]](https://github.com/hito2448/urd)
+  - Authors: Xinyue Liu, Jianyuan Wang, Biao Leng, Shuo Zhang
+  - strengthens reversed distillation by adding an expert network and guided feature transfer so the model can better distinguish abnormal features and reconstruct clean normal patterns with fewer errors. 
+  - Datasets: MVTec AD, MPDD, BTAD
+
+
+
+- ⭐⭐⭐ *(2023-NeurIPS)* **ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction** [[Paper]](https://openreview.net/pdf?id=KYxD9YCQBH), [[ArXiv]](https://arxiv.org/abs/2306.02602), [[Code]](https://github.com/guojiajeremy/ReContrast)
+  - Authors: Jia Guo, Shuai Lu, Lize Jia, Weihang Zhang, Huiqi Li
+  - fine-tunes both encoder and decoder with a contrastive reconstruction strategy to remove biases from pre-trained features and adapt the whole model to the target domain for more accurate identification of unusual patterns. 
+  - Datasets: MVTec AD, Visa, OCT2017, APTOS, ISIC2018
+
+
+
+- ⭐⭐ *(2023-CVPR)* **Diversity-Measurable Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Diversity-Measurable_Anomaly_Detection_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2303.05047), [[Code]](https://github.com/FlappyPeggy/DMAD)
+  - Authors: Wenrui Liu, Hong Chang, Bingpeng Ma, Shiguang Shan, Xilin Chen
+  - boosts reconstruction diversity for normal patterns using multi-scale deformation fields while preventing abnormal details from being learned, leading to more reliable detection of unusual inputs. 
+  - Datasets: Ped2, Avenue, ShanghaiTech, MVTec AD
+
+
+
+
+- ⭐⭐ *(2023-CVPR)* **Revisiting Reverse Distillation for Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Tien_Revisiting_Reverse_Distillation_for_Anomaly_Detection_CVPR_2023_paper.pdf), [[Code]](https://github.com/tientrandinh/Revisiting-Reverse-Distillation)
+  - Authors: Tien, Tran Dinh and Nguyen, Anh Tuan and Tran, Nguyen Hoang and Huy, Ta Duc and Duong, Soan T.M. and Nguyen, Chanh D. Tr. and Truong, Steven Q. H.
+  - enhances reversed distillation to create a faster, more accurate system for spotting and localizing defects without relying on slow external memory banks. 
+  - Datasets: MVTec AD, BTAD, Retinal OCT
+
+
+
+
+- ⭐⭐⭐ *(2022-CVPR)* **Anomaly Detection via Reverse Distillation from One-Class Embedding** [[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Deng_Anomaly_Detection_via_Reverse_Distillation_From_One-Class_Embedding_CVPR_2022_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2201.10703), [[Code]](https://github.com/hq-deng/RD4AD)
+  - Authors: Hanqiu Deng, Xingyu Li
+  - reverses teacher–student distillation by having the student reconstruct the teacher’s multi-level features from a compact one-class embedding, yielding richer cues for spotting deviations from normality. 
+  - Datasets: MVTec AD, MNIST, CIFAR-10, Fashion-MNIST, Caltech-256
+
+
+- ⭐⭐ *(2022-CVPR)* **Self-Supervised Predictive Convolutional Attentive Block for Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Ristea_Self-Supervised_Predictive_Convolutional_Attentive_Block_for_Anomaly_Detection_CVPR_2022_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2111.09099), [[Code]](https://github.com/ristea/sspcab)
+  - Authors: Nicolae-Catalin Ristea, Neelu Madan, Radu Tudor Ionescu, Kamal Nasrollahi, Fahad Shahbaz Khan, Thomas B. Moeslund, Mubarak Shah
+  - a self-supervised prediction block that reconstructs masked regions within each receptive field, boosting the performance of many existing frameworks for spotting unusual patterns. 
+  - Datasets: MVTec AD, CHUK Avenue, ShanghaiTech
+  - Extend to PAMI: *Self-Supervised Masked Convolutional Transformer Block for Anomaly Detection* [[Paper]](https://ieeexplore.ieee.org/document/10273635/), [[ArXiv]](https://arxiv.org/abs/2209.12148), [[Code]](https://github.com/ristea/ssmctb)
+
+
+
+
+- ⭐ *(2022-TMM)* **Self-Supervised Masking for Unsupervised Anomaly Detection and Localization** [[Paper]](https://ieeexplore.ieee.org/document/9779083), [[ArXiv]](https://arxiv.org/abs/2205.06568)
+  - Authors: Chaoqin Huang, Qinwei Xu, Yanfeng Wang, Yu Wang, Ya Zhang
+  - rains a model to restore randomly masked images and then uses progressive mask refinement at test time to efficiently uncover normal areas and pinpoint abnormal regions. 
+  - Datasets: Retinal-OCT, MVTec AD
+
+
+- ⭐ *(2021-CVPR)* **Glancing at the Patch: Anomaly Localization with Global and Local Feature Comparison** [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Glancing_at_the_Patch_Anomaly_Localization_With_Global_and_Local_CVPR_2021_paper.pdf)
+  - Authors: Shenzhi Wang, Liwei Wu, Lei Cui, Yujun Shen
+  - compares each patch’s features with those of its surrounding context using global–local networks and multi-head discrepancy scoring to precisely locate abnormal regions. 
+  - Datasets: MVTec AD, CIFAR-10
+
+
+
+
+- ⭐ *(2021-PR)* **Reconstruction by inpainting for visual anomaly detection** [[Paper]](https://www.sciencedirect.com/science/article/pii/S0031320320305094), [[Unoff-Code]](https://github.com/plutoyuxie/Reconstruction-by-inpainting-for-visual-anomaly-detection)
+  - Authors: Vitjan Zavrtanik, Matej Kristan, Danijel Skčaj
+  - reframes reconstruction as an inpainting task so the model learns to fill in missing regions from normal patterns, making anomalies harder to reconstruct and therefore easier to detect. 
+  - Datasets: MVTec AD, UCSD Ped2, CUHK Avenue
+
+
+
+
+
+- ⭐⭐ *(2020-CVPR)* **Learning Memory-guided Normality for Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Park_Learning_Memory-Guided_Normality_for_Anomaly_Detection_CVPR_2020_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2003.13228), [[Code]](https://github.com/cvlab-yonsei/MNAD)
+  - Authors: Hyunjong Park, Jongyoun Noh, Bumsub Ham
+  - limits the model’s ability to reconstruct unusual events by using a memory module that stores diverse normal patterns and enforces compact, well-separated features, making deviations easier to spot. 
+  - Datasets: UCSD Ped2, CUHK Avenue, ShanghaiTech
+
+
+
+- ⭐ *(2020-TMM)* **Attribute Restoration Framework for Anomaly Detection** [[Paper]](https://ieeexplore.ieee.org/document/9311201), [[ArXiv]](https://arxiv.org/abs/1911.10676)
+  - Authors: Chaoqin Huang, Fei Ye, Jinkun Cao, Maosen Li, Ya Zhang, Cewu Lu
+  - forces the model to restore images with missing attributes so it must learn meaningful semantics, causing abnormal inputs to produce larger restoration errors. 
+  - Datasets: MNIST, Fashion-MNIST, CIFAR-10, CIFAR100 and ImageNet, MVTec AD, ShanghaiTech
+
+
+
+- ⭐⭐⭐ *(2019-ICCV)* **Memorizing Normality to Detect Anomaly: Memory-augmented Deep Autoencoder for Unsupervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content_ICCV_2019/papers/Gong_Memorizing_Normality_to_Detect_Anomaly_Memory-Augmented_Deep_Autoencoder_for_Unsupervised_ICCV_2019_paper.pdf), [[ArXiv]](https://arxiv.org/abs/1904.02639), [[Code]](https://github.com/donggong1/memae-anomaly-detection)
+  - Authors: Dong Gong, Lingqiao Liu, Vuong Le, Budhaditya Saha, Moussa Reda Mansour, Svetha Venkatesh, Anton van den Hengel
+  - enhances autoencoders with a memory module that reconstructs inputs using stored normal patterns, making abnormal inputs stand out through larger reconstruction errors. 
+  - Datasets: MNIST, CIFAR-10, UCSD-Ped2, CUHK Avenue, ShanghaiTech, KDDCUP99
+
+
+- ⭐ *(2019-AAAI)* **Learning Competitive and Discriminative Reconstructions for Anomaly Detection** [[Paper]](https://cdn.aaai.org/ojs/4451/4451-13-7490-1-10-20190706.pdf), [[ArXiv]](https://arxiv.org/abs/1903.07058)
+  - Authors: Kai Tian, Shuigeng Zhou, Jianping Fan, Jihong Guan
+  - trains an encoder with two competing decoders that separately model normal and abnormal patterns, allowing the system to infer labels for unlabeled data without needing a hand-crafted threshold. 
+  - Datasets: KDD99, MNIST, CIFAR-10, Fashion-MNIST, ImageNet-20, Caltech-101, Caltech-256
+
+
+
+
+- ⭐⭐ *(2018-ICLR)* **Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection** [[Paper]](https://openreview.net/forum?id=BJJLHbb0-), [[ArXiv]](), [[Unoff-Code]](https://github.com/danieltan07/dagmm)
+  - Authors: Bo Zong, Qi Song, Martin Renqiang Min, Wei Cheng, Cristian Lumezanu, Daeki Cho, Haifeng Chen
+  - unifies autoencoding and density modeling into a single learned system so it can better capture normal data structure and flag points that fall outside this learned distribution. 
+  - Datasets: KDDCUP, Thyroid, Arrhythmia, KDDCUP-Rev
+
+
+
+
+
+### Synthesis-based/Data Augmentation Methods
+
+
+
+
+- ⭐⭐⭐ *(2023-CVPR)* **SimpleNet: A Simple Network for Image Anomaly Detection and Localization** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_SimpleNet_A_Simple_Network_for_Image_Anomaly_Detection_and_Localization_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2303.15140), [[Code]](https://github.com/DonaldRR/SimpleNet)
+  - Authors: Zhikang Liu, Yiming Zhou, Yuansheng Xu, Zilei Wang
+  - a lightweight system that adapts pretrained features to the target domain and discriminates between normal and noise-perturbed features, achieving fast and highly accurate detection of abnormal patterns. 
+  - Datasets: MVTec AD, CIFAR10
+
+
+- ⭐⭐ *(2023-CVPR)* **DeSTSeg: Segmentation Guided Denoising Student-Teacher for Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_DeSTSeg_Segmentation_Guided_Denoising_Student-Teacher_for_Anomaly_Detection_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2211.11317), [[Code]](https://github.com/apple/ml-destseg)
+  - Authors: Xuan Zhang, Shiyu Li, Xi Li, Ping Huang, Jiulong Shan, Ting Chen
+  - strengthens teacher–student learning with denoising and supervised segmentation so the model can more robustly distinguish abnormal patterns and localize them accurately. 
+  - Datasets:  MVTec AD
+
+
+
+
+
+- ⭐⭐⭐ *(2021-ICCV)* **DRAEM -- A discriminatively trained reconstruction embedding for surface anomaly detection** [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zavrtanik_DRAEM_-_A_Discriminatively_Trained_Reconstruction_Embedding_for_Surface_Anomaly_ICCV_2021_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2108.07610), [[Code]](https://github.com/VitjanZ/DRAEM)
+  - Authors: Vitjan Zavrtanik, Matej Kristan, Danijel Skočaj
+  - learns a joint representation of an image and its reconstruction to directly separate normal from abnormal regions, enabling accurate defect localization without heavy post-processing. 
+  - Datasets: MVTec AD, DAGM
+
+
+
+
+
+- ⭐⭐ *(2021-CVPR)* **CutPaste: Self-Supervised Learning for Anomaly Detection and Localization** [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/html/Li_CutPaste_Self-Supervised_Learning_for_Anomaly_Detection_and_Localization_CVPR_2021_paper.html), [[ArXiv]](https://arxiv.org/abs/2104.04015), [[Code]](https://github.com/LilitYolyan/CutPaste)
+  - Authors: Chun-Liang Li, Kihyuk Sohn, Jinsung Yoon, Tomas Pfister
+  - learns features by training a model to spot CutPaste perturbations and then builds a one-class classifier on top, enabling strong detection of unseen defects using only normal data. 
+  - Datasets: MVTec AD
+
+
+
+- ⭐⭐ *(2018-NeurIPS)* **Deep Anomaly Detection Using Geometric Transformations** [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2018/file/5e62d03aec0d17facfc5355dd90d441c-Paper.pdf), [[ArXiv]](https://arxiv.org/abs/1805.10917), [[Code]](https://github.com/izikgo/AnomalyDetectionTransformations)
+  - Authors: Izhak Golan, Ran El-Yaniv
+  - trains a model to recognize many geometric transformations, and this learned visual understanding helps it spot images that don't fit the normal class. 
+  - Datasets:  CIFAR-10, CIFAR-100, Fashion-MNIST, CatsVsDogs
+
+
+
+
+### Feature-based/Memory Methods
+
+
+
+
+
+
+
+
+
+
 
 ## Supervised/Openset/Noise Anomaly Detection Methods
 
@@ -455,6 +648,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 # Updates
 
+- 🦘 2025-12-11: Added Industrial unsupervised AD papers (2018-2025, ICLR, CVPR, ICCV, AAAI, etc.).
 - 🦘 2025-12-10: Added Industrial supervised AD papers (2017-2025, ICLR, CVPR, AAAI).
 - 🦘 2025-11-29: Added Medical Anomaly Detection papers (2017-2025, TMI,MedIA, MICCAI, CVPR) and datasets.
 - 🦘 2025-11-28: Added Medical Anomaly Detection papers (2020-2025, TMI,MedIA, MICCAI, CVPR) and datasets.
