@@ -54,6 +54,10 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 ### Reconstruction-based Methods
 
 
+- ⭐⭐ *(2025-CVPR)* **Exploring Intrinsic Normal Prototypes within a Single Image for  Universal Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/pdf/2503.02424), [[Code]](https://github.com/luow23/INPFormer)
+  - Authors: Wei Luo, Yunkang Cao, Haiming Yao, Xiaotian Zhang, Jianan Lou, Yuqi Cheng, Weiming Shen, Wenyong Yu
+  - extracts the intrinsic normal prototypes (INPs) from the image and integrate them into a transformer-based reconstruction model to improve the quality of reconstruction.
+  - Datasets: MVTec-AD, VisA, Real-IAD
 
 
 - ⭐⭐ *(2025-AAAI)* **Unlocking the Potential of Reverse Distillation for Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/pdf/2406.07487), [[Code]](https://github.com/hyao1/GLAD)
@@ -169,7 +173,16 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 ### Synthesis-based/Data Augmentation Methods
 
+- ⭐⭐ *(2025-NeurIPS)* **FAST: Foreground-aware Diffusion with Accelerated Sampling Trajectory for Segmentation-oriented Anomaly Synthesis**[[ArXiv]](https://arxiv.org/pdf/2509.20295), [[Code]](https://github.com/Chhro123/fast-foreground-aware-anomaly-synthesis)
+  - Authors: Xiaolei Wang, Xiaoyang Wang, Huihui Bai, Eng Gee Lim, Jimin Xiao
+  - improves the speed of anomaly synthesis and differentiate between the foreground and background of images. 
+  - Datasets: MVTec-AD, BTAD
 
+
+- ⭐ *(2025-ICCV)* **DecAD: Decoupling Anomalies in Latent Space for Multi-Class Unsupervised Anomaly Detection**[[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_DecAD_Decoupling_Anomalies_in_Latent_Space_for_Multi-Class_Unsupervised_Anomaly_ICCV_2025_paper.pdf)
+  - Authors: Xiaolei Wang, Xiaoyang Wang, Huihui Bai, Eng Gee Lim, Jimin Xiao
+  - introduces adversarial training to generate more realistic synthetic anomalies, and then use INN (Invertible Neural Network) to ensure that the model can only reconstruct normal features. 
+  - Datasets: MVTec AD, VisA, Real-IAD
 
 
 - ⭐⭐⭐ *(2023-CVPR)* **SimpleNet: A Simple Network for Image Anomaly Detection and Localization** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_SimpleNet_A_Simple_Network_for_Image_Anomaly_Detection_and_Localization_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2303.15140), [[Code]](https://github.com/DonaldRR/SimpleNet)
@@ -227,10 +240,17 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 ### Supervised/Openset Methods
 
+
 - ⭐⭐⭐ *(2025-NeurIPS)* **Normal-Abnormal Guided Generalist Anomaly Detection** [[ArXiv]](https://arxiv.org/pdf/2510.00495), [[Code]](https://github.com/JasonKyng/NAGL)
   - Authors: Yuexin Wang, Xiaolei Wang, Yizheng Gong, Jimin Xiao 
   - a memory-based method utilizes normal and abnormal as reference.
   - Datasets: MVTecAD, VisA, BraTS
+
+
+- ⭐⭐⭐ *(2025-ICCV)* **MultiADS: Defect-aware Supervision for Multi-type Anomaly Detection and  Segmentation in Zero-Shot Learning** [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Sadikaj_MultiADS_Defect-aware_Supervision_for_Multi-type_Anomaly_Detection_and_Segmentation_in_ICCV_2025_paper.pdf), [[Code]](https://github.com/boschresearch/MultiADS)
+  - Authors: Ylli Sadikaj, Hongkuan Zhou, Lavdim Halilaj, Stefan Schmid, Steffen Staab, Claudia Plant
+  - perform multi-classification based on different types of anomalies.
+  - Datasets: MVTec-AD, VisA, MPDD, MAD, RealIAD
 
 
 - ⭐⭐ *(2025-CVPR)* **Distribution Prototype Diffusion Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_TailedCore_Few-Shot_Sampling_for_Unsupervised_Long-Tail_Noisy_Anomaly_Detection_CVPR_2025_paper.pdf), [[Code]](https://github.com/fuyunwang/DPDL)
@@ -328,10 +348,17 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Datasets: MVTecAD, MPDD, ViSA, RealIAD
 
 
+- ⭐ *(2025-ICCV)* **Towards Real Unsupervised Anomaly Detection Via Confident Meta-Learning** [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Aqeel_Towards_Real_Unsupervised_Anomaly_Detection_Via_Confident_Meta-Learning_ICCV_2025_paper.pdf) 
+  - Authors: Muhammad Aqeel, Shakiba Sharifi, Marco Cristani, Francesco Setti
+  - proposes Soft Confident Learning to filtering noisy sample and utilizes meta-learning to improve the ability to quickly adapt to new data.
+  - Datasets: MVTec-AD, VIADUCT, KSDD2
+
+
 - ⭐⭐ *(2025-CVPR)* **TailedCore: Few-Shot Sampling for Unsupervised Long-Tail Noisy Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_TailedCore_Few-Shot_Sampling_for_Unsupervised_Long-Tail_Noisy_Anomaly_Detection_CVPR_2025_paper.pdf), [[Code]](https://github.com/jungyg/TailedCore)
   - Authors: Yoon Gyo Jung, Jaewoo Park, Jaeho Yoon, Kuan-Chuan Peng, Wonchul Kim, Andrew Beng Jin Teoh, Octavia Camps
   - an improved model based on the softpatch to address the issues of tail class and noise obfuscation. 
   - Datasets: MVTecAD, VisA
+
 
 - ⭐⭐ *(2025-PR)* **SoftPatch+: Fully Unsupervised Anomaly Classification and Segmentation** [[Paper]](https://www.sciencedirect.com/science/article/pii/S003132032401046X?ref=pdf_download&fr=RR-3&rr=9ada506ebe6397fb), [[Code]](https://github.com/TencentYoutuResearch/AnomalyDetection-SoftPatch)
   - Authors: Chengjie Wanga, Xi Jiangc, Bin-Bin Gaob, Zhenye Ganb, Yong Liub, Feng Zhengc, Lizhuang Maa
@@ -344,6 +371,25 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - propose an patch-level denoise strategy to address the noisy data during training 
   - Datasets: MVTecAD, BTAD
 
+
+## Zero/Few-shot Anomaly Detection
+
+- ⭐⭐ *(2025-ICCV)* **ReMP-AD: Retrieval-enhanced Multi-modal Prompt Fusion for Few-Shot Industrial Visual Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_ReMP-AD_Retrieval-enhanced_Multi-modal_Prompt_Fusion_for_Few-Shot_Industrial_Visual_Anomaly_ICCV_2025_paper.pdf), [[Code]](https://github.com/cshcma/ReMP-AD.git)
+  - Authors: Hongchi Ma, Guanglei Yang, Debin Zhao, Yanli Ji, Wangmeng Zuo
+  - proposes Retrieval-enhanced Multi-modal Prompt Fusion Anomaly Detection to improve matching between query images and reference images in few-shot anomaly detection.
+  - Datasets: MVTec-AD, VisA, PCB-Bank
+
+
+- ⭐ *(2025-ICCV)* **FE-CLIP: Frequency Enhanced CLIP Model for Zero-Shot Anomaly Detection and Segmentation** [[Paper]]([https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_ReMP-AD_Retrieval-enhanced_Multi-modal_Prompt_Fusion_for_Few-Shot_Industrial_Visual_Anomaly_ICCV_2025_paper.pdf)
+  - Authors: Tao Gong, Qi Chu, Bin Liu, Wei Zhou, Nenghai Yu
+  - combines frequency information with the CLIP model.
+  - Datasets: MVTec AD, VisA, MPDD, BTAD, DAGM, DTD-Synthetic. CVC-ClinicDB, Kvasir, BrainMRI, Br35H
+
+
+- ⭐⭐⭐ *(2023-CVPR)* **WinCLIP: Zero-/Few-Shot Anomaly Classification and Segmentation** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Jeong_WinCLIP_Zero-Few-Shot_Anomaly_Classification_and_Segmentation_CVPR_2023_paper.pdf), [[Unoff-Code]](https://github.com/mala-lab/WinCLIP)
+  - Authors: Jongheon Jeong, Yang Zou, Taewan Kim, Dongqing Zhang, Avinash Ravichandran, Onkar Dabeer
+  - proposes text prompt-guided anoamly detection and first leverage manual text prompt set.
+  - Datasets: MVTec-AD, VisA, PCB-Bank
 
 
 # [Medical Anomaly Detection](#medical-anomaly-detection)
@@ -670,6 +716,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 ---
 
 # Updates
+- 🍋 2025-12-29: Added Industrial Few/Zero-shot AD papers, unsupervised AD papers(2023-2025, CVPR, ICCV, NeurIPS, etc.).
 - 🍋 2025-12-14: Added Industrial noisy AD papers, supervised AD papers (2022-2025, CVPR, PR, NeurIPS, etc.).
 - 🦘 2025-12-11: Added Industrial unsupervised AD papers (2018-2025, ICLR, CVPR, ICCV, AAAI, etc.).
 - 🦘 2025-12-10: Added Industrial supervised AD papers (2017-2025, ICLR, CVPR, AAAI).
