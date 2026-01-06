@@ -185,10 +185,29 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Datasets: MVTec AD, VisA, Real-IAD
 
 
+- ⭐⭐ *(2025-ICCV)* **Training-Free Industrial Defect Generation with Diffusion Models**[[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Training-Free_Industrial_Defect_Generation_with_Diffusion_Models_ICCV_2025_paper.pdf), [[Code]](https://github.com/rubymiaomiao/TF-IDG)
+  - Authors: Ruyi Xu, Yen-Tzu Chiu, Tai-I Chen, Oscar Chew, Yung-Yu Chuang, Wen-Huang Cheng
+  - proposes TF-IDG, a training-free framework that leverages pre-trained Diffusion models  with Feature Alignment and Adaptive Anomaly Masking to generate high-quality defects in one-shot settings without fine-tuning.
+  - Datasets: MVTec AD, VisA
+
+
+- ⭐⭐⭐ *(2024-AAAI)* **AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model**[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/28696/29348),[[Code]]([https://github.com/sjtuplayer/anomalydiffusion](https://github.com/sjtuplayer/anomalydiffusion))
+  - Authors: Teng Hu, Jiangning Zhang, Ran Yi, Yuzhen Du, Xu Chen, Liang Liu, Yabiao Wang, Chengjie Wang
+  - introduces a few-shot anomaly generation model using Latent Diffusion Models (LDM) with two key modules: Spatial Anomaly Embedding (SAE) to disentangle anomaly appearance from location, and Adaptive Attention Re-weighting (AAR) to improve alignment between generated anomalies and masks.
+  - Datasets: MVTec AD
+
+
+- ⭐⭐⭐ *(2024-ECCV)* **A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization (GLASS)**[[Paper]](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382.pdf),[[Code]]([https://github.com/cqylunlun/GLASS.https://github.com/cqylunlun/GLASS)
+  - Authors: Qiyu Chen, Huiyuan Luo, Chengkan Lv, Zhengtao Zhang
+  - introduces GLASS, a unified framework combining Global Anomaly Synthesis (GAS) in feature space with manifold constraints and Local Anomaly Synthesis (LAS) in image space using gradient ascent to generate hard-to-detect weak defects.
+  - Datasets: MVTec AD, VisA, MPDD
+
+
 - ⭐⭐⭐ *(2023-CVPR)* **SimpleNet: A Simple Network for Image Anomaly Detection and Localization** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_SimpleNet_A_Simple_Network_for_Image_Anomaly_Detection_and_Localization_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2303.15140), [[Code]](https://github.com/DonaldRR/SimpleNet)
   - Authors: Zhikang Liu, Yiming Zhou, Yuansheng Xu, Zilei Wang
   - a lightweight system that adapts pretrained features to the target domain and discriminates between normal and noise-perturbed features, achieving fast and highly accurate detection of abnormal patterns. 
   - Datasets: MVTec AD, CIFAR10
+
 
 
 - ⭐⭐ *(2023-CVPR)* **DeSTSeg: Segmentation Guided Denoising Student-Teacher for Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_DeSTSeg_Segmentation_Guided_Denoising_Student-Teacher_for_Anomaly_Detection_CVPR_2023_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2211.11317), [[Code]](https://github.com/apple/ml-destseg)
@@ -716,6 +735,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 ---
 
 # Updates
+- 🍋 2026-01-06: Added Industrial Synthesis-based AD papers(2024-2025, AAAI, ICCV, ECCV, etc.).
 - 🍋 2025-12-29: Added Industrial Few/Zero-shot AD papers, unsupervised AD papers(2023-2025, CVPR, ICCV, NeurIPS, etc.).
 - 🍋 2025-12-14: Added Industrial noisy AD papers, supervised AD papers (2022-2025, CVPR, PR, NeurIPS, etc.).
 - 🦘 2025-12-11: Added Industrial unsupervised AD papers (2018-2025, ICLR, CVPR, ICCV, AAAI, etc.).
