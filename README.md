@@ -51,16 +51,18 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - a deep model trained directly on a one-class objective to tightly enclose normal data, enabling effective identification of inputs that fall outside this learned boundary. 
   - Datasets: MNIST, CIFAR-10
 
+
+
 ### Reconstruction-based Methods
 
 
-- ⭐⭐ *(2025-CVPR)* **Exploring Intrinsic Normal Prototypes within a Single Image for  Universal Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/pdf/2503.02424), [[Code]](https://github.com/luow23/INPFormer)
+- ⭐⭐ *(2025-CVPR)* **Exploring Intrinsic Normal Prototypes within a Single Image for Universal Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/pdf/2503.02424), [[Code]](https://github.com/luow23/INPFormer)
   - Authors: Wei Luo, Yunkang Cao, Haiming Yao, Xiaotian Zhang, Jianan Lou, Yuqi Cheng, Weiming Shen, Wenyong Yu
   - extracts the intrinsic normal prototypes (INPs) from the image and integrate them into a transformer-based reconstruction model to improve the quality of reconstruction.
   - Datasets: MVTec-AD, VisA, Real-IAD
 
 
-- ⭐⭐ *(2025-AAAI)* **Unlocking the Potential of Reverse Distillation for Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601), [[ArXiv]](https://arxiv.org/pdf/2406.07487), [[Code]](https://github.com/hyao1/GLAD)
+- ⭐⭐ *(2025-AAAI)* **Unlocking the Potential of Reverse Distillation for Anomaly Detection** [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/32601/34756), [[ArXiv]](https://arxiv.org/pdf/2406.07487), [[Code]](https://github.com/hyao1/GLAD)
   - Authors: Xinyue Liu, Jianyuan Wang, Biao Leng, Shuo Zhang
   - strengthens reversed distillation by adding an expert network and guided feature transfer so the model can better distinguish abnormal features and reconstruct clean normal patterns with fewer errors. 
   - Datasets: MVTec AD, MPDD, BTAD
@@ -191,13 +193,13 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Datasets: MVTec AD, VisA
 
 
-- ⭐⭐⭐ *(2024-AAAI)* **AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model**[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/28696/29348),[[Code]]([https://github.com/sjtuplayer/anomalydiffusion](https://github.com/sjtuplayer/anomalydiffusion))
+- ⭐⭐⭐ *(2024-AAAI)* **AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model**[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/28696/29348),[[Code]](https://github.com/sjtuplayer/anomalydiffusion)
   - Authors: Teng Hu, Jiangning Zhang, Ran Yi, Yuzhen Du, Xu Chen, Liang Liu, Yabiao Wang, Chengjie Wang
   - introduces a few-shot anomaly generation model using Latent Diffusion Models (LDM) with two key modules: Spatial Anomaly Embedding (SAE) to disentangle anomaly appearance from location, and Adaptive Attention Re-weighting (AAR) to improve alignment between generated anomalies and masks.
   - Datasets: MVTec AD
 
 
-- ⭐⭐⭐ *(2024-ECCV)* **A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization (GLASS)**[[Paper]](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382.pdf),[[Code]]([https://github.com/cqylunlun/GLASS.https://github.com/cqylunlun/GLASS)
+- ⭐⭐⭐ *(2024-ECCV)* **A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization (GLASS)**[[Paper]](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382.pdf),[[Code]]([https://github.com/cqylunlun/GLASS)
   - Authors: Qiyu Chen, Huiyuan Luo, Chengkan Lv, Zhengtao Zhang
   - introduces GLASS, a unified framework combining Global Anomaly Synthesis (GAS) in feature space with manifold constraints and Local Anomaly Synthesis (LAS) in image space using gradient ascent to generate hard-to-detect weak defects.
   - Datasets: MVTec AD, VisA, MPDD
@@ -248,10 +250,12 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 
 
+### Others
 
-
-
-
+- ⭐⭐ *(2026-CVPR)* **InvAD: Inversion-based Reconstruction-Free Anomaly Detection with Diffusion Models** [[Paper]](https://arxiv.org/pdf/2504.05662), [[Code]](https://invad-project.com)
+  - Authors: Shunsuke Sakai, Xiangteng He, Chunzhi Gu, Leonid Sigal, Tatsuhito Hasegawa
+  - proposing a reconstruction-free paradigm that directly infers the final latent variable via DDIM inversion, evaluating anomaly scores based on deviation from the known prior distribution to achieve high detection accuracy and fast inference speed. 
+  - Datasets: MVTecAD, VisA, MPDD, BMAD
 
 
 
@@ -272,7 +276,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Datasets: MVTec-AD, VisA, MPDD, MAD, RealIAD
 
 
-- ⭐⭐ *(2025-CVPR)* **Distribution Prototype Diffusion Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_TailedCore_Few-Shot_Sampling_for_Unsupervised_Long-Tail_Noisy_Anomaly_Detection_CVPR_2025_paper.pdf), [[Code]](https://github.com/fuyunwang/DPDL)
+- ⭐ *(2025-CVPR)* **Distribution Prototype Diffusion Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Distribution_Prototype_Diffusion_Learning_for_Open-set_Supervised_Anomaly_Detection_CVPR_2025_paper.pdf), [[Code]](https://github.com/fuyunwang/DPDL)
   - Authors: Fuyun Wang, Tong Zhang, Yuanzhi Wang, Yide Qiu, Xin Liu, Xu Guo, Zhen Cui
   - a prototype-driven latent space that tightly clusters normal samples while pushing abnormal ones away, enabling clearer separation even with limited anomaly examples. 
   - Datasets: MVTec AD, Optical, SDD, AITEX, ELPV, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
@@ -285,7 +289,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 
 
 
-- ⭐⭐ *(2024-CVPR)* **Anomaly Heterogeneity Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_Anomaly_Heterogeneity_Learning_for_Open-set_Supervised_Anomaly_Detection_CVPR_2024_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2310.12790), [[Code]](https://github.com/mala-lab/AHL)
+- ⭐ *(2024-CVPR)* **Anomaly Heterogeneity Learning for Open-set Supervised Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_Anomaly_Heterogeneity_Learning_for_Open-set_Supervised_Anomaly_Detection_CVPR_2024_paper.pdf), [[ArXiv]](https://arxiv.org/abs/2310.12790), [[Code]](https://github.com/mala-lab/AHL)
   - Authors: Jiawen Zhu, Choubo Ding, Yu Tian, Guansong Pang
   - Simulates diverse abnormal patterns so models can learn a more general notion of abnormality and better handle unseen, unpredictable defect types. 
   - Datasets: MVTec AD, AITEX, SDD, ELPV, Optical, Mastcam, BrainMRI, HeadCT, Hyper-Kvasir
@@ -389,9 +393,42 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Authors: Xi Jiang, Jianlin Liu, Jinbao Wang, Qian Nie, Kai Wu, Yong Liu, Chengjie Wang, Feng Zheng
   - propose an patch-level denoise strategy to address the noisy data during training 
   - Datasets: MVTecAD, BTAD
+  
 
 
 ## Zero/Few-shot Anomaly Detection
+
+
+- ⭐⭐ *(2026-CVPR)* **SubspaceAD: Training-Free Few-Shot Anomaly Detection via Subspace Modeling** [[ArXiv]](https://arxiv.org/pdf/2602.23013), [[Code]](https://github.com/CLendering/SubspaceAD)
+  - Authors: Camile Lendering, Erkut Akdag, Egor Bondarev
+  - proposes a minimalist, training-free approach that extracts patch-level features using a frozen DINOv2 backbone and fits a PCA model to estimate a normal subspace, localizing anomalies based on their reconstruction residuals.
+  - Datasets: MVTec-AD, VisA
+
+
+- ⭐⭐ *(2026-CVPR)* **VisualAD: Language-Free Zero-Shot Anomaly Detection via Vision Transformer** [[ArXiv]](https://arxiv.org/pdf/2603.07952), [[Code]](https://github.com/7HHHHH/VisualAD)
+  - Authors: Yanning Hou, Peiyuan Li, Zirui Liu, Yitong Wang, Yanran Ruan, Jianfeng Qiu, Ke Xu
+  - a purely visual zero-shot anomaly detection framework (VisualAD) built on frozen Vision Transformers. It introduces two learnable tokens to directly encode normality and abnormality , utilizing a Spatial-Aware Cross-Attention (SCA) module to inject fine-grained spatial information and a Self-Alignment Function (SAF) to recalibrate patch features before anomaly scoring.
+  - Datasets: MVTec-AD, VisA, BTAD, KSDD2, DAGM, DTD-Synthetic (Industrial); OCT17, BrainMRI, BrainAD, HIS, CVC-ClinicDB, Endo, Kvasir (Medical)
+
+
+- ⭐⭐⭐ *(2026-ICLR)* **Foundation Visual Encoders Are Secretly Few-Shot Anomaly Detectors** [[ArXiv]](https://arxiv.org/pdf/2510.01934), [[Code]](https://github.com/ymxlzgy/FoundAD)
+  - Authors: Guangyao Zhai, Yue Zhou, Xinyan Deng, Lars Heckler, Nassir Navab, Benjamin Busam
+  - a lightweight few-shot anomaly detection framework (FOUNDAD) that utilizes frozen foundation visual encoders and a simple non-linear projector to map anomalous features onto the normal natural image manifold entirely within the latent space.
+  - Datasets: MVTec-AD, VisA
+
+
+- ⭐ *(2026-ICLR)* **PIRN: Prototypical-based Intra-modal Reconstruction with Normality Communication for Multimodal Anomaly Detection** [[Paper]](https://openreview.net/pdf?id=7L7kmHHfgf)
+  - Authors: Yiting Li, Xulei Yang, Jing Zhang, Sichao Tian, Jingyi Liao, Fayao Liu
+  - proposes PIRN, a prototype-driven reconstruction framework that utilizes a compact set of learnable prototypes and explicit cross-modal knowledge transfer to accurately detect anomalies in few-shot multimodal scenarios.
+  - Datasets: MVTec 3D-AD, Eyecandies, Real-IAD D3
+
+
+- ⭐⭐ *(2026-ICLR)* **MRAD: Zero-Shot Anomaly Detection with Memory-Driven Retrieval** [[Paper]](https://openreview.net/pdf?id=TQkFiW3AEX), [[ArXiv]](https://arxiv.org/pdf/2602.00522), [[Code]](https://github.com/CROVO1026/MRAD)
+  - Authors: Chaoran Xu, Chengkan Lv, Qiyu Chen, Feng Zhang, Zhengtao Zhang
+  - a unified memory-driven retrieval few/zero-shot framework that replaces parametric fitting with a direct two-level memory bank (image-level and pixel-level) for similarity retrieval, and further injects region priors into dynamic text prompts.
+  - Datasets: MVTec-AD, VisA, BTAD, MPDD, SDD, KSDD2, DAGM, DTD-Synthetic, HeadCT, BrainMRI, Br35H, CVC-ColonDB, CVC-ClinicDB, Endo, Kvasir, ISIC.
+
+
 
 - ⭐⭐ *(2025-ICCV)* **ReMP-AD: Retrieval-enhanced Multi-modal Prompt Fusion for Few-Shot Industrial Visual Anomaly Detection** [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_ReMP-AD_Retrieval-enhanced_Multi-modal_Prompt_Fusion_for_Few-Shot_Industrial_Visual_Anomaly_ICCV_2025_paper.pdf), [[Code]](https://github.com/cshcma/ReMP-AD.git)
   - Authors: Hongchi Ma, Guanglei Yang, Debin Zhao, Yanli Ji, Wangmeng Zuo
@@ -399,7 +436,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
   - Datasets: MVTec-AD, VisA, PCB-Bank
 
 
-- ⭐ *(2025-ICCV)* **FE-CLIP: Frequency Enhanced CLIP Model for Zero-Shot Anomaly Detection and Segmentation** [[Paper]]([https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_ReMP-AD_Retrieval-enhanced_Multi-modal_Prompt_Fusion_for_Few-Shot_Industrial_Visual_Anomaly_ICCV_2025_paper.pdf)
+- ⭐ *(2025-ICCV)* **FE-CLIP: Frequency Enhanced CLIP Model for Zero-Shot Anomaly Detection and Segmentation** [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Gong_FE-CLIP_Frequency_Enhanced_CLIP_Model_for_Zero-Shot_Anomaly_Detection_and_ICCV_2025_paper.pdf)
   - Authors: Tao Gong, Qi Chu, Bin Liu, Wei Zhou, Nenghai Yu
   - combines frequency information with the CLIP model.
   - Datasets: MVTec AD, VisA, MPDD, BTAD, DAGM, DTD-Synthetic. CVC-ClinicDB, Kvasir, BrainMRI, Br35H
@@ -735,6 +772,7 @@ A curated list of papers, datasets, and code resources for anomaly detection in 
 ---
 
 # Updates
+- 🍋 2026-03-15: Added Industrial Few/Zero-shot AD papers, unsupervised AD papers(2026, CVPR, ICLR).
 - 🍋 2026-01-06: Added Industrial Synthesis-based AD papers(2024-2025, AAAI, ICCV, ECCV, etc.).
 - 🍋 2025-12-29: Added Industrial Few/Zero-shot AD papers, unsupervised AD papers(2023-2025, CVPR, ICCV, NeurIPS, etc.).
 - 🍋 2025-12-14: Added Industrial noisy AD papers, supervised AD papers (2022-2025, CVPR, PR, NeurIPS, etc.).
